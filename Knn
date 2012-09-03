@@ -1,0 +1,38 @@
+class training_data:
+    user_list = []
+    
+    def __init__ (self, temp):
+        for i in range(0,len(temp)):
+            self.user_list.append(temp[i])
+
+    def print_user_list(self):
+        for j in range(0, len(self.user_list)):
+            print(user_list[j])
+
+def find_users():
+    test_file = open('user_train.txt', 'r')
+    input_list = test_file.readlines()
+    user_len = len(input_list)
+    print ("number of users in the list ")
+    print (user_len)
+    return  input_list
+
+#get the number of users in the training data
+training_data = find_users()
+
+#u = input("enter the value of u:" )
+#k = input("enter the value of k:")
+
+col = []
+
+for line in training_data:
+    temp = line.split(' ')
+    col.append(training_data(temp))
+
+col[1].print_user_list()
+        
+
+#for i in range (0,j):
+#    print (col[1])
+    
+
